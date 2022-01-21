@@ -1,0 +1,2 @@
+# SimpleChatCore
+Backend for SimpleChat
