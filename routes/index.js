@@ -5,6 +5,10 @@ const userRouter = require("./userRouter");
 
 module.exports = function (app) {
 
+    app.use("test", function (req, res){
+        res.json("asdhasjhdjkashjdhasdhjkashdhasjkdhkasd")
+        res.end()
+    })
     app.use("/user", userRouter);
     app.use("/file", fileRouter);
     // app.use("/chat", chatRouter);
