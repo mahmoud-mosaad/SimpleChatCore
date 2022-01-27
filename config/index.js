@@ -16,7 +16,7 @@ module.exports = function (app) {
 
     app.use('/graphql'/*, graphqlRoute*/, graphqlHTTP({
         schema: graphqlSchema,
-        graphiql: process.env.NODE_ENV === 'development'
+        graphiql: true//process.env.NODE_ENV === 'development'
     }))
 
 }
